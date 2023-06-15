@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: blue; text-align: center;
+            background-image: url(contact.jpeg) ;
+            padding: 50px;
+        }
+        .contact{
+            background-color: aqua;
+        }
+        
+        .contact ul{
+            text-align: center;
+            
+        }
+
+        .location{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    position: absolute;
+    padding-top: 50px;
+    
+}
+.location ul li{
+    display: block;
+
+}
+.location img{
+    size: 2px;
+    width: 0.5cm;
+}
+.location ul li a{
+    text-decoration: none;
+}
+h4{
+    padding-top: 50px;
+}
+.link{
+    text-align: center;
+    padding: 50px;
+    font-size: large;
+    
+}
+.link ul li{
+    list-style: none;
+}
+.link ul li a{
+    text-decoration: none;
+    color: blue;
+}
+.link ul li :hover{
+    color: brown;
+}
+.services{
+    text-align: center;
+    padding: 50px;
+    font-size: large;
+}
+    .services ul li{
+        list-style: none;
+}
+.services ul li a{
+    text-decoration: none;
+    color: blue;
+}
+.services ul li :hover{
+    color: brown;
+}
+h5{
+    font-size: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+.hours{
+    text-align: right;
+    padding-right: 9px;
+    font-size: large;
+    
+
+}
+.hours ul li{
+    text-decoration: none;
+    list-style: none;
+}
+h6{
+    font-size: 20px;
+}
+.copy{
+    text-align: center;
+    font-size: larger;
+    background-image: url(copy.jpeg);
+    padding: 20px;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-weight: bold;
+
+}
+
+nav{
+    display: inline-flex;
+    background: #42db52;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-size: cover;
+   
+}
+nav img{
+    width: 80px;
+}
+
+
+.menu-bar{
+   
+    height: 80px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    
+}
+
+
+.menu-bar ul{
+    list-style-type: none;
+    display: flex;
+}
+.menu-bar ul li{ 
+    padding: 9px 30px;
+    position: relative;
+
+}
+.menu-bar ul li a{
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.menu-bar ul li a:hover{
+    color: brown;
+}
+.dropdown-menu{
+    display: none;
+}
+.menu-bar ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 99%;
+    background-color: darkslateblue;
+}
+.menu-bar ul li:hover .dropdown-menu ul{
+    display: block;
+    margin: 9px;
+}
+.dropdown-menu ul li{
+    
+    padding: 9px;
+}
+.fas{
+    float: right;
+    margin-left: 9px;
+    padding-top: 3px;
+}
+.co{
+    font-size: larger;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.gen{
+    background-color: aquamarine;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="logo.jpeg" alt="logo">
+        </div>
+        <div class="nav-right">
+            <div class="image">
+            <img src="logo.jpeg" alt="logo">
+        </div>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="Asindu.html">Home</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="vission.html">Vission</a></li>
+                
+                <li><a href="services.html">Services<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="repair.html">Repair and Maintenance</a></li>
+                        <li><a href="net.html">IT Infrastructure</a></li>
+                        <li><a href="web.html">Web Development</a></li>
+                        <li><a href="windows.html">Software Installation</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <h1>CONTACT <span style="color:#2600ff">US</span></h1>
+    <div class="contact">
+        <ul>
+    <form action="">
+        Your Name: <br><input type="text" placeholder="Enter Fullname" size="50"> <br> <br>
+        Email: <br><input type="text" placeholder="Enter email" size="50"> <br>
+        <br>
+        Phone Number: <br><input type="text" placeholder="Enter phone number" size="50"> <br> <br>
+       Message: <br> <textarea name="Message" id="" cols="20" rows="5" ></textarea>
+       <br> <br>
+       <input type="button" value="submit" size="20">
+    </form>
+    </ul>
+</div>
+<div class="gen">
+    <ul>
+
+    
+<div class="co">
+    <p>You can reach us on the following for your business solutions</p>
+    <p>MANAGING DIRECTOR</p>
+    <br>
+    ASINDU JOEL MIGHTY
+    <br>
+    phone:  0789218920/0775646763
+    <br>
+    Email us on:  asindujoel4@gmail.com
+    <br>
+    <div class="location">
+        <h3>More</h3>
+            <p>We are located in Arua Opposite <br> plazzas scartel in Ewuatta Trading centre</p>
+            <ul>
+                <li><img src="call.png" alt="call">+2567892920/+256775646763</li>
+               <br> <li><img src="mail.jpeg" alt="gmail">asindujoel4@gmail.com</li>
+               <br> <li><img src="gmail.png" alt="gmail">mightyasindu@gmail.com</li>
+            </ul>
+        
+            <h4>Company Policies and Terms</h4>
+        <ul>
+            <li><a href="t&c.html">Terms and Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+        
+        
+        </div>
+        
+        <div class="link">
+            <p>Useful Links</p>
+            <ul>
+                <li><a href="Asindu.html">Home</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="vission.html">Vission</a></li>
+                
+                
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="services">
+            <h5>Services</h5>
+                <ul>
+                    <li><a href="repair.html">Repair and Maintenance</a></li>
+                    <li><a href="net.html">IT Infrastructure</a></li>
+                    <li><a href="web.html">Web Development</a></li>
+                    <li><a href="windows.html">Software Installation</a></li>
+                </ul>
+            </div>
+        
+        <div class="hours">
+        <h6>Opening Hours</h6>
+        <ul>
+            <li>Open:            Mon - Sun</li>
+            <li>Working Hours:   24/7</li>
+                 -------------    ------------
+        </ul>
+        </div>
+    </div>
+</ul>
+</div>
+        <div class="copy">
+            <ul>
+        <p>copyright&copy;2023 All rights reserved</p>
+        <p>Designed
+        <br>
+        By
+        <br>
+        Mighty Asindu
+        <br>
+        call: +256789218920
+        <br>
+        email at: asindujoel@gmail.com
+        </p>
+        </ul>
+        </div>
+
+</body>
+</html>

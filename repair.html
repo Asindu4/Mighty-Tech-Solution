@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAT-Logies</title>
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(153, 190, 199);
+    
+}
+nav{
+    display: inline-flex;
+    background: #42db52;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+   
+}
+nav img{
+    width: 80px;
+}
+
+
+.menu-bar{
+   
+    height: 80px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+
+
+.menu-bar ul{
+    list-style-type: none;
+    display: flex;
+}
+.menu-bar ul li{ 
+    padding: 9px 30px;
+    position: relative;
+
+}
+.menu-bar ul li a{
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.menu-bar ul li a:hover{
+    color: brown;
+}
+.dropdown-menu{
+    display: none;
+}
+.menu-bar ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 99%;
+    background-color: darkslateblue;
+}
+.menu-bar ul li:hover .dropdown-menu ul{
+    display: block;
+    margin: 9px;
+}
+.dropdown-menu ul li{
+    
+    padding: 9px;
+}
+.fas{
+    float: right;
+    margin-left: 9px;
+    padding-top: 3px;
+}
+body{
+
+    align-items: center;
+    
+    background-repeat: no-repeat;
+    
+}
+h1{
+    text-align: center;
+    padding-top: 40px;
+    text-decoration: none;
+    color: #f10c18;
+    font-size: xx-large;
+    background-image: url(rep.jpg);
+    height: 150px;
+    
+}
+    h2{
+        text-align: center;
+        padding-bottom: 0;
+        text-decoration: none;
+        padding-top: 645px;
+    
+}
+.svc{
+    font-size: x-large;
+    padding: 50px;
+    background-color: #65c8cf;
+    border: 1px solid rgb(187, 130, 45);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.services ul{
+    display: inline-flex;
+    padding: 0%;
+    list-style: none;
+    
+    color: aqua;
+    background-color: rgba(46, 182, 98, 0.5);
+    background-size: cover;
+    padding-right: 120px; 
+    padding-top: 90px;
+    
+    
+   
+   
+}
+
+.service{
+    text-align: center;
+    
+}
+.service ul{
+    padding-left: 50px;
+    list-style: none;
+    align-items: center;
+    
+    
+}
+h5{
+    text-align: center;
+}
+.service ul li a{
+    font-size: larger;
+    text-decoration: none;
+    color: #300ef1;
+
+}
+.service ul li{
+    text-decoration: #42db52;
+}
+.service ul li a:hover{
+    color: brown;
+}
+
+
+p{
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+
+
+.contact{
+    background-color: aqua;
+}
+
+.contact ul{
+    text-align: center;
+    
+}
+
+.location{
+padding: 0;
+margin: 0;
+text-align: left;
+position: absolute;
+padding-top: 50px;
+padding-left: 20px;
+font-size: larger;
+
+}
+.location ul li{
+display: block;
+
+}
+.location img{
+size: 2px;
+width: 0.5cm;
+}
+.location ul li a{
+text-decoration: none;
+}
+h4{
+padding-top: 50px;
+}
+.link{
+text-align: center;
+padding: 50px;
+
+}
+.link p{
+    font-weight: bold;
+    font-size: larger;
+}
+.link ul li{
+list-style: none;
+}
+.link ul li a{
+text-decoration: none;
+color: #300ef1;
+font-size: larger;
+}
+
+h5{
+font-size: 20px;
+}
+.hours{
+text-align: right;
+padding-right: 20px;
+
+
+}
+.hours ul li{
+text-decoration: none;
+list-style: none;
+font-size: larger;
+}
+h6{
+font-size: 20px;
+}
+.copy{
+text-align: center;
+font-size: 20px;
+background-image: url(copy.jpeg);
+padding: 10px;
+image-rendering: auto;
+background-repeat: no-repeat;
+background-size: cover;
+font-weight: bold;
+
+}
+
+nav{
+display: inline-flex;
+background: #42db52;
+position: sticky;
+top: 0;
+z-index: 99;
+
+}
+.gen{
+    background-image: url(back.jpg);
+}
+.rip ul img{
+    display: inline-flex;
+    width: 660px;
+    height: 450px;
+   padding: 30px;
+}
+.container{
+
+    width: 800px;
+      height: 560px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: large;
+      
+}
+.how ul{
+
+    display: inline-flex;
+    width: 700px;
+}
+.alll ul{
+display: inline-flex;
+justify-content: space-between;
+padding: 20px;
+height: 600px;
+
+}
+.con{
+    
+    width: 600px;
+    padding-left: 20px;
+    height: 500px;
+    font-size: large;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="logo.jpeg" alt="logo">
+        </div>
+        <div class="nav-right">
+            <div class="image">
+            <img src="logo.jpeg" alt="logo">
+        </div>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="vission.html">Vission</a></li>
+                
+                <li><a href="services.html">Services<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="repair.html">Repair and Maintenance</a></li>
+                        <li><a href="net.html">IT Infrastructure</a></li>
+                        <li><a href="web.html">Web Development</a></li>
+                        <li><a href="windows.html">Software Installation</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <h1>Repair and Maintenance</h1>
+    <div class="rip">
+        <ul>
+
+        <img src="Repair-Services.jpg" alt="rep-services">
+    <img src="rep_maintenance.jpg" alt="re-services">
+</ul>
+</div>
+<div class="container" ">
+
+        <p style="font-weight: bold; font-size: larger;">WHY CHOOSE MIGHTY-TECH</p>
+        <br>
+        Nothing is more frustrating than something not working when you need it most. 
+        Doesn’t it seem like your computer always needs repair at the worst times? 
+        You simply can’t do the work you need to.
+    <br> <br>
+      We have a team of Experts with lots of Experience in the field of computer repair 
+and technology solutions. They have worked with a variety of clients across different industries,
+ which means they can bring valuable expertise to your specific problem.
+ <br> <br>
+Mighty-Tech is customized and flexible solution to your problem because we understand that every 
+problem is unique and has its own specific requirements. Therefore our team is ready to offer customizable
+ solutions tailored to your needs, ensuring that you get a solution that aligns with your goals and objectives.
+<br> <br>
+We are also known for delivering high-quality products and services. Our solutions are reliable, robust,
+ and built to industry standards. This can provide peace of mind that your technology infrastructure 
+will perform well and meet your expectations.
+<br> <br>
+</div>
+<p style="font-size: xx-large; font-weight: bold;">Get the service from the Experts</p>
+<div class="alll">
+    <ul>
+<div class="how"><ul>
+    <li><img src="ment.jpg" alt="repair" style="width: 600px;"></li>
+    </ul>
+</div>
+        <div class="con">
+            <ul>
+                HOW WE DO IT 
+        <br>
+        <br>
+        Our Computer Repair and maintenance  Services are available for 
+all kinds of personal computers – Desktops, Laptops and All-in-one Computers etc.
+ Our team of Experts have the capability to provide efficient and economical solutions
+ for all kinds of hardware issues faced with computers.
+<br>
+<br>
+
+We also have the capability to do motherboard and chip level repairs at our state-of-the-art
+ repair facility. Our in-house experts can swiftly diagnose the issue and suggest a solution
+ to fix your PC.
+<br>
+<br>
+ We also have IT spares parts readily available in stock with us to deliver faster repair turn-around time.
+Our services cater to both under-warranty and out-of-warranty products.
+ Customers have a choice to avail our services by walking in to any of our support centers, requesting a
+ technician to visit to your home/office or ordering a pickup and delivery. </li></div>
+</ul></div>
+</ul>
+</div>
+        <br>
+        <p class="svc">Mighty-Tech specializes in providing technology solutions, services, and <br>
+             products related to information and communication technologies. <br>
+    We offer a wide range of services tailored to the needs of our clients, which include</p>
+       
+    <div class="gen">
+        <ul>
+
+    <div class="location">
+        <h3 style="padding-left: 40px;">More</h3>
+        <br>
+        We are located in Arua Opposite <br> plazzas scartel in Ewuatta Trading centre</p>
+            <ul>
+                <li><img src="call.png" alt="call">+2567892920/+256775646763</li>
+                <li><img src="mail.jpeg" alt="gmail">asindujoel4@gmail.com</li>
+                <li><img src="gmail.png" alt="gmail">mightyasindu@gmail.com</li>
+            </ul>
+        
+            <h4>Company Policies and Terms</h4>
+        <ul>
+            <li><a href="t&c.html">Terms and Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+        
+        
+        </div>
+        
+        <div class="link">
+            <p>Useful Links</p>
+            <ul>
+                <li><a href="Asindu.html">Home</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="vission.html">Vission</a></li>
+                
+                
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="service">
+            <h5 >Services</h5>
+                <ul>
+                    <li><a href="repair.html">Repair and Maintenance</a></li>
+                    <li><a href="net.html">IT Infrastructure</a></li>
+                    <li><a href="web.html">Web Development</a></li>
+                    <li><a href="windows.html">Software Installation</a></li>
+                </ul>
+            </div>
+        
+        <div class="hours">
+        <h6>Opening Hours</h6>
+        <ul>
+            <li>Open:            Mon - Sun</li>
+            <li>Working Hours:  24/7</li>
+            -----------------    ------------------
+        </ul>
+        </div>
+    </ul>
+</div>
+        <div class="copy">
+            <ul>
+        <p>copyright&copy;2023 All rights reserved
+            <br>
+            <br>
+        Designed
+        <br>
+        By
+        <br>
+        Mighty Asindu
+        <br>
+        call: +256789218920
+        <br>
+        email at: asindujoel4@gmail.com
+        </p>
+        </ul>
+        </div>
+</body>
+</html>

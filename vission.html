@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAT-Logies</title>
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(153, 190, 199);
+    
+}
+nav{
+    display: inline-flex;
+    background: #42db52;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+   
+}
+nav img{
+    width: 80px;
+}
+
+
+.menu-bar{
+   
+    height: 80px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+
+
+.menu-bar ul{
+    list-style-type: none;
+    display: flex;
+}
+.menu-bar ul li{ 
+    padding: 9px 30px;
+    position: relative;
+
+}
+.menu-bar ul li a{
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.menu-bar ul li a:hover{
+    color: brown;
+}
+.dropdown-menu{
+    display: none;
+}
+.menu-bar ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 99%;
+    background-color: darkslateblue;
+}
+.menu-bar ul li:hover .dropdown-menu ul{
+    display: block;
+    margin: 9px;
+}
+.dropdown-menu ul li{
+    
+    padding: 9px;
+}
+.fas{
+    float: right;
+    margin-left: 9px;
+    padding-top: 3px;
+}
+body{
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.viz{
+    align-items: center;
+    background-image: url(vis.png);
+    background-size: cover;
+    background-repeat: repeat;
+    font-size: xx-large;
+    margin-top: 0%;
+    padding-top: 0%;
+    
+    
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: #fa0000;
+}
+    h2{
+        text-align: center;
+        padding-bottom: 0;
+        text-decoration: none;
+        padding-top: 645px;
+    
+}
+.svc{
+    font-size: x-large;
+}
+.services ul{
+    display: inline-flex;
+    padding: 0%;
+    list-style: none;
+    
+    color: aqua;
+    background-color: rgba(46, 182, 98, 0.5);
+    background-size: cover;
+    padding-right: 120px; 
+    padding-top: 90px;
+    
+    
+   
+   
+}
+
+.service{
+    text-align: center;
+    
+}
+.service ul{
+    padding-left: 50px;
+    list-style: none;
+    align-items: center;
+    
+    
+}
+h5{
+    text-align: center;
+}
+.service ul li a{
+    font-size: larger;
+    text-decoration: none;
+    color: #300ef1;
+
+}
+.service ul li{
+    text-decoration: #42db52;
+}
+.service ul li a:hover{
+    color: brown;
+}
+
+p{
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+
+
+.contact{
+    background-color: aqua;
+}
+
+.contact ul{
+    text-align: center;
+    
+}
+
+.location{
+padding: 0;
+margin: 0;
+text-align: left;
+position: absolute;
+padding-top: 50px;
+padding-left: 20px;
+font-size: larger;
+
+}
+.location ul li{
+display: block;
+
+}
+.location img{
+size: 2px;
+width: 0.5cm;
+}
+.location ul li a{
+text-decoration: none;
+}
+h4{
+padding-top: 50px;
+}
+.link{
+text-align: center;
+padding: 50px;
+
+}
+.link p{
+    font-weight: bold;
+    font-size: larger;
+}
+.link ul li{
+list-style: none;
+}
+.link ul li a{
+text-decoration: none;
+color: #300ef1;
+font-size: larger;
+}
+
+h5{
+font-size: 20px;
+}
+.hours{
+text-align: right;
+padding-right: 20px;
+
+
+}
+.hours ul li{
+text-decoration: none;
+list-style: none;
+font-size: larger;
+}
+h6{
+font-size: 20px;
+}
+.copy{
+text-align: center;
+font-size: 20px;
+background-image: url(copy.jpeg);
+padding: 10px;
+image-rendering: auto;
+background-repeat: no-repeat;
+background-size: cover;
+font-weight: bold;
+
+}
+
+nav{
+display: inline-flex;
+background: #42db52;
+position: sticky;
+top: 0;
+z-index: 99;
+
+}
+.gen{
+    background-color: rgb(139, 255, 255);
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="logo.jpeg" alt="logo">
+        </div>
+        <div class="nav-right">
+            <div class="image">
+            <img src="logo.jpeg" alt="logo">
+        </div>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="vission.html">Vission</a></li>
+                
+                <li><a href="services.html">Services<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="repair.html">Repair and Maintenance</a></li>
+                        <li><a href="net.html">IT Infrastructure</a></li>
+                        <li><a href="web.html">Web Development</a></li>
+                        <li><a href="windows.html">Software Installation</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <h1>MIGHTY-TECH</h1>
+
+    <div class="viz"><h1>OUR VISSION</h1>
+        <p>Our vision is to empower businesses and individuals through innovative services and solutions, driving digital transformation and enabling success in the digital age.</p>
+    </div>
+            <img src="sore.webp" alt="">
+       
+    <div class="gen">
+        <ul>
+
+    <div class="location">
+        <h3 style="padding-left: 40px;">More</h3>
+        <br>
+        We are located in Arua Opposite <br> plazzas scartel in Ewuatta Trading centre</p>
+            <ul>
+                <li><img src="call.png" alt="call">+2567892920/+256775646763</li>
+                <li><img src="mail.jpeg" alt="gmail">asindujoel4@gmail.com</li>
+                <li><img src="gmail.png" alt="gmail">mightyasindu@gmail.com</li>
+            </ul>
+        
+            <h4>Company Policies and Terms</h4>
+        <ul>
+            <li><a href="t&c.html">Terms and Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+        
+        
+        </div>
+        
+        <div class="link">
+            <p>Useful Links</p>
+            <ul>
+                <li><a href="Asindu.html">Home</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="vission.html">Vission</a></li>
+                
+                
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="service">
+            <h5 >Services</h5>
+                <ul>
+                    <li><a href="repair.html">Repair and Maintenance</a></li>
+                    <li><a href="net.html">IT Infrastructure</a></li>
+                    <li><a href="web.html">Web Development</a></li>
+                    <li><a href="windows.html">Software Installation</a></li>
+                </ul>
+            </div>
+        
+        <div class="hours">
+        <h6>Opening Hours</h6>
+        <ul>
+            <li>Open:            Mon - Sun</li>
+            <li>Working Hours:  24/7</li>
+            -----------------    ------------------
+        </ul>
+        </div>
+    </ul>
+</div>
+        <div class="copy">
+            <ul>
+        <p>copyright&copy;2023 All rights reserved
+            <br>
+            <br>
+        Designed
+        <br>
+        By
+        <br>
+        Mighty Asindu
+        <br>
+        call: +256789218920
+        <br>
+        email at: asindujoel4@gmail.com
+        </p>
+        </ul>
+        </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mission ul li{
+display: inline-flex;
+text-decoration: none;
+}
+.mission ul li img{
+    text-decoration: none;
+    width: 5cm;
+    display: inline-flex;
+}
+.one{
+    align-content: flex-start;
+}
+.three{
+    align-items: center;
+}
